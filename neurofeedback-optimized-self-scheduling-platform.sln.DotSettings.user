@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Csnesse_005CRiderProjects_005Cneurofeedback_002Doptimized_002Dself_002Dscheduling_002Dplatform_005CClientApplication_005Cbin_005CDebug_005Cnet6_002E0_002Dwindows_005CClientApplication_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0d230a5e_002D9ca9_002D45cb_002Da9a7_002D140a0e7fdd7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShowTwoInitialNumbers" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::FD8961C0-A0F9-4EE5-B5AA-82BCCAA434B7::net6.0-windows::TestProject1.GameTests.BackTrackGameTest.ShowTwoInitialNumbers&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=10487eff_002D36ee_002D46c9_002Db544_002Dc4d1fbcf2e3f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

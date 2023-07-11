@@ -1,0 +1,10 @@
+{
+  "Host": "Hansi",
+  "Participants": [
+    "horst",
+    "heinz"
+  ],
+  "ServerIP":  "192.168.2.1",
+  "MinNumberOfConnectedClients": 3,
+  "WorkloadViewChangeMode": 0
+}

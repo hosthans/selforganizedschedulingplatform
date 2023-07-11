@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ClientApplication.Views.Games.MemoMasterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:converter="clr-namespace:ClientApplication.Converter"
+             xmlns:games="clr-namespace:ClientApplication.ViewModels.Games"
+             d:DataContext="{d:DesignInstance Type=games:MemoMasterViewModel}"
+             mc:Ignorable="d"
+             d:DesignHeight="340" d:DesignWidth="640"
+             Background="White"
+             Focusable="True">
+    <UserControl.Resources>
+        <converter:BooleanToUncoveredConverter x:Key="BooleanToUncoveredConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Image Source="{Binding GameIcon, Converter={StaticResource VariableToImagePathConverter}}" Width="35" Height="35" Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+
+            <ItemsControl ItemsSource="{Binding Cards}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="4" Columns="4" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                    <Rectangle x:Name="rec" Fill="Beige"  Stroke="Black" Width="70" Height="70" Canvas.Left="10" Canvas.Top="10" MouseLeftButtonDown="OnCardChanged">
+                        <Rectangle.InputBindings>
+                            <MouseBinding Gesture="LeftClick" Command="{ Binding ImageChange}"/>
+                        </Rectangle.InputBindings>
+                    </Rectangle>
+                </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+    </Grid>
+</UserControl>
